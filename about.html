@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Shop Savvy — SparkHacks 2026 project">
+  <title>About — Shop Savvy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Shop Savvy Home">
+        <span class="header__logo-icon">SS</span>
+        Shop Savvy
+      </a>
+      <div class="header__search" role="search" aria-label="Search products">
+        <input type="text" class="header__search-input" placeholder="Search products, brands, categories..." aria-label="Search products">
+        <button class="header__search-btn" aria-label="Search">&#128269;</button>
+      </div>
+      <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="products.html" class="header__nav-link">Products</a>
+        <a href="compare.html" class="header__nav-link">Compare <span class="header__badge compare-badge"></span></a>
+        <a href="cart.html" class="header__nav-link">Quote List <span class="header__badge cart-badge"></span></a>
+        <a href="about.html" class="header__nav-link header__nav-link--active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main Content ── -->
+  <main id="main-content">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span>About</span>
+      </nav>
+
+      <div class="about-content">
+        <h1>About Shop Savvy</h1>
+        <p>
+          <strong>Shop Savvy</strong> is a simplified, Grainger-like industrial product catalog built for
+          <strong>SparkHacks 2026</strong>. It helps users find the right industrial parts faster by providing
+          intuitive search, side-by-side comparison, and a clean, accessible interface.
+        </p>
+
+        <h2>The Problem</h2>
+        <p>
+          Users struggle to pick the right industrial product quickly because specifications are complex and
+          comparison is tedious &mdash; especially for novice users and small-to-medium industrial companies
+          who don't have dedicated procurement experts.
+        </p>
+
+        <h2>What We Built</h2>
+        <ul>
+          <li><strong>Product Catalog:</strong> Browse 100+ industrial products across 24 categories sourced from a real Grainger dataset.</li>
+          <li><strong>Search:</strong> Keyword search across product titles, brands, descriptions, and categories.</li>
+          <li><strong>Filters &amp; Sorting:</strong> Filter by category, brand, and price range. Sort by price or name.</li>
+          <li><strong>Product Details:</strong> View full specifications with organized key-value spec tables.</li>
+          <li><strong>Compare:</strong> Compare up to 4 products side-by-side with highlighted differences.</li>
+          <li><strong>Quote Builder:</strong> Build a parts list, adjust quantities, and export as CSV.</li>
+        </ul>
+
+        <h2>Tech Stack</h2>
+        <ul>
+          <li><strong>Frontend:</strong> Vanilla HTML, CSS, and JavaScript &mdash; no frameworks.</li>
+          <li><strong>Data:</strong> Static JSON dataset preprocessed from the Kaggle Grainger Products Database (140k records).</li>
+          <li><strong>Search &amp; Filtering:</strong> Client-side, all performed in-browser with JavaScript.</li>
+          <li><strong>State Management:</strong> localStorage for cart and compare lists.</li>
+        </ul>
+
+        <h2>Data Source</h2>
+        <p>
+          Product data comes from the
+          <a href="https://www.kaggle.com/datasets/thedevastator/grainger-products-database-140k-records/data" target="_blank" rel="noopener">
+            Kaggle Grainger Products Database
+          </a>.
+          This is a static snapshot and does not reflect real-time inventory or pricing.
+        </p>
+        <p style="background: #FFF3E0; padding: 12px 16px; border-radius: 6px; border-left: 4px solid #FF9800; font-size: 0.9rem;">
+          <strong>Disclaimer:</strong> Always verify specifications and pricing before making purchasing decisions.
+          This application is a demonstration and does not represent actual Grainger inventory.
+        </p>
+
+        <h2>The Team</h2>
+        <ul>
+          <li><strong>Himanshu Panchal</strong></li>
+          <li><strong>Anthony Valenzo</strong></li>
+          <li><strong>Mario Tabares</strong></li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <ul>
+          <li><strong>Search:</strong> Use the search bar on any page to find products by keyword.</li>
+          <li><strong>Browse:</strong> Click a category on the home page to see products in that category.</li>
+          <li><strong>Filter:</strong> On the products page, use the sidebar to filter by category, brand, or price.</li>
+          <li><strong>Compare:</strong> Click the compare icon on product cards to add them to comparison (up to 4).</li>
+          <li><strong>Quote List:</strong> Click the cart icon to add products to your quote list, then export as CSV.</li>
+        </ul>
+
+        <h2>Keyboard Shortcuts</h2>
+        <ul>
+          <li><strong>Tab</strong> &mdash; Navigate between interactive elements.</li>
+          <li><strong>Enter</strong> &mdash; Activate focused button or link.</li>
+          <li><strong>Escape</strong> &mdash; Close mobile menu (when applicable).</li>
+        </ul>
+
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/Himanshu-1804/Spark-Hacks-2026" target="_blank" rel="noopener">GitHub Repository</a></li>
+          <li><a href="https://www.kaggle.com/datasets/thedevastator/grainger-products-database-140k-records/data" target="_blank" rel="noopener">Dataset Source (Kaggle)</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__section">
+        <h3>Shop Savvy</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.5;">
+          A simplified industrial catalog helping users find the right parts faster.
+        </p>
+      </div>
+      <div class="footer__section">
+        <h3>Quick Links</h3>
+        <a href="products.html">All Products</a>
+        <a href="compare.html">Compare</a>
+        <a href="cart.html">Quote List</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 Shop Savvy — SparkHacks 2026 | Himanshu Panchal, Anthony Valenzo, Mario Tabares
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    App.onReady(() => App.initNav());
+  </script>
+</body>
+</html>
