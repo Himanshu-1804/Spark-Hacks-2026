@@ -1,5 +1,5 @@
 /* ============================================
-   Shop Savvy — Products List Page Logic
+   GraingeSeek — Products List Page Logic
    Search, Filter, Sort, Pagination
    ============================================ */
 

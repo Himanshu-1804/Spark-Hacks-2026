@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Convert Grainger CSV dataset to clean JSON for Shop Savvy frontend.
+Convert Grainger CSV dataset to clean JSON for GraingeSeek frontend.
 
 Usage:
     python3 scripts/convert_csv.py

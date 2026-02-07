@@ -1,5 +1,5 @@
 /* ============================================
-   Shop Savvy — Shared Application Module
+   GraingeSeek — Shared Application Module
    Data loading, cart, compare, search, toast, nav
    ============================================ */
 
