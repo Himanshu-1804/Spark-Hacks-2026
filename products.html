@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse and search industrial products. Filter by category, brand, and price.">
+  <title>Products — Shop Savvy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Shop Savvy Home">
+        <span class="header__logo-icon">SS</span>
+        Shop Savvy
+      </a>
+      <div class="header__search" role="search" aria-label="Search products">
+        <input type="text" class="header__search-input" placeholder="Search products, brands, categories..." aria-label="Search products">
+        <button class="header__search-btn" aria-label="Search">&#128269;</button>
+      </div>
+      <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link">Home</a>
+        <a href="products.html" class="header__nav-link header__nav-link--active">Products</a>
+        <a href="compare.html" class="header__nav-link">Compare <span class="header__badge compare-badge"></span></a>
+        <a href="cart.html" class="header__nav-link">Quote List <span class="header__badge cart-badge"></span></a>
+        <a href="about.html" class="header__nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main Content ── -->
+  <main id="main-content">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb__sep">/</span>
+        <span id="breadcrumb-current">All Products</span>
+      </nav>
+
+      <!-- Mobile filter toggle -->
+      <button class="btn btn--secondary btn--full filters-toggle" id="filters-toggle" aria-label="Toggle filters">
+        &#9776; Show Filters
+      </button>
+
+      <div class="plp-layout">
+        <!-- Filters Sidebar -->
+        <aside class="filters" id="filters-sidebar" aria-label="Product filters">
+          <div class="filters__title">
+            Filters
+            <button class="filters__clear" id="clear-filters">Clear All</button>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <label class="filter-group__label">Category</label>
+            <div class="filter-group__options" id="filter-categories"></div>
+          </div>
+
+          <!-- Brand Filter -->
+          <div class="filter-group">
+            <label class="filter-group__label">Brand</label>
+            <div class="filter-group__options" id="filter-brands"></div>
+          </div>
+
+          <!-- Price Range -->
+          <div class="filter-group">
+            <label class="filter-group__label">Price Range</label>
+            <div class="filter-price-range">
+              <input type="number" id="price-min" placeholder="Min" min="0" aria-label="Minimum price">
+              <span class="filter-price-range__sep">—</span>
+              <input type="number" id="price-max" placeholder="Max" min="0" aria-label="Maximum price">
+            </div>
+            <button class="btn btn--sm btn--secondary" id="apply-price" style="margin-top: 8px; width: 100%;">Apply</button>
+          </div>
+        </aside>
+
+        <!-- Product List Area -->
+        <div>
+          <!-- Toolbar -->
+          <div class="plp-toolbar">
+            <div class="plp-toolbar__count" id="results-count">Loading...</div>
+            <div class="plp-toolbar__sort">
+              <label for="sort-select">Sort by:</label>
+              <select id="sort-select" aria-label="Sort products">
+                <option value="relevance">Relevance</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="products-grid">
+            <div class="loading"><div class="loading__spinner"></div> Loading products...</div>
+          </div>
+
+          <!-- Pagination -->
+          <div id="pagination-container"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Compare Bar ── -->
+  <div class="compare-bar" aria-label="Compare products bar">
+    <div class="compare-bar__inner">
+      <div class="compare-bar__items"></div>
+      <a href="compare.html" class="btn btn--primary btn--sm">View Compare</a>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__section">
+        <h3>Shop Savvy</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.5;">
+          A simplified industrial catalog helping users find the right parts faster.
+        </p>
+      </div>
+      <div class="footer__section">
+        <h3>Quick Links</h3>
+        <a href="products.html">All Products</a>
+        <a href="compare.html">Compare</a>
+        <a href="cart.html">Quote List</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 Shop Savvy — SparkHacks 2026 | Himanshu Panchal, Anthony Valenzo, Mario Tabares
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
