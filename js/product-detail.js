@@ -1,5 +1,5 @@
 /* ============================================
-   GraingeSeek — Product Detail Page Logic
+   GraingeSeek  Product Detail Page Logic
    ============================================ */
 
 App.onReady(async () => {
@@ -21,7 +21,7 @@ App.onReady(async () => {
     return;
   }
 
-  document.title = `${product.title} — GraingeSeek`;
+  document.title = `${product.title}  GraingeSeek`;
   renderProduct(product);
   renderSpecs(product);
   renderSuggested(product, data.products);

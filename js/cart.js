@@ -1,5 +1,5 @@
 /* ============================================
-   GraingeSeek — Cart / Quote Builder Page Logic
+   GraingeSeek  Cart / Quote Builder Page Logic
    ============================================ */
 
 App.onReady(async () => {

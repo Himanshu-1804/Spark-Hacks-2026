@@ -1,5 +1,5 @@
 /* ============================================
-   GraingeSeek — Home Page Logic
+   GraingeSeek  Home Page Logic
    ============================================ */
 
 App.onReady(async () => {

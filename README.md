@@ -1,17 +1,17 @@
-# GraingeSeek — Industrial Product Catalog
+# GraingeSeek  Industrial Product Catalog
 
-A simplified, Grainger-like industrial product catalog built for **SparkHacks 2026**. Search, compare, and build quote lists from 100+ industrial products — all in the browser with vanilla HTML, CSS, and JavaScript.
+A simplified, Grainger-like industrial product catalog built for **SparkHacks 2026**. Search, compare, and build quote lists from 100+ industrial products  all in the browser with vanilla HTML, CSS, and JavaScript.
 
 ## Features
 
-- **Product Catalog** — Browse 169 products across 24 categories
-- **Keyword Search** — Search across titles, brands, descriptions, and categories
-- **Filters & Sorting** — Filter by category, brand, and price range; sort by price or name
-- **Product Details** — Full specification tables with organized key-value data
-- **Compare (2–4 products)** — Side-by-side comparison table with highlighted differences
-- **Quote Builder** — Add items, adjust quantities, see totals, and export as CSV
-- **Responsive Design** — Works on desktop and mobile
-- **Accessibility** — Keyboard navigation, ARIA labels, focus states, skip navigation
+- **Product Catalog:** Browse 169 products across 24 categories
+- **Keyword Search:** Search across titles, brands, descriptions, and categories
+- **Filters & Sorting:** Filter by category, brand, and price range; sort by price or name
+- **Product Details:** Full specification tables with organized key-value data
+- **Compare (2–4 products):** Side-by-side comparison table with highlighted differences
+- **Quote Builder:** Add items, adjust quantities, see totals, and export as CSV
+- **Responsive Design:** Works on desktop and mobile
+- **Accessibility:** Keyboard navigation, ARIA labels, focus states, skip navigation
 
 ## Tech Stack
 
@@ -84,7 +84,7 @@ This reads `grainger_data_2022_01.csv` and writes `data/products.json`.
 
 ## Data Source
 
-Product data from the [Kaggle Grainger Products Database (140k records)](https://www.kaggle.com/datasets/thedevastator/grainger-products-database-140k-records/data). This is a static snapshot — not real-time inventory.
+Product data from the [Kaggle Grainger Products Database (140k records)](https://www.kaggle.com/datasets/thedevastator/grainger-products-database-140k-records/data). This is a static snapshot  not real-time inventory.
 
 > **Disclaimer:** Always verify specs and pricing before purchasing. This is a demo application.
 
@@ -96,4 +96,4 @@ Product data from the [Kaggle Grainger Products Database (140k records)](https:/
 
 ## License
 
-SparkHacks 2026 — University of Illinois at Chicago
+SparkHacks 2026  University of Illinois at Chicago
