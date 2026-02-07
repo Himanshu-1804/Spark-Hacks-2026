@@ -1,5 +1,5 @@
 /* ============================================
-   Shop Savvy — Compare Page Logic
+   GraingeSeek — Compare Page Logic
    Side-by-side product comparison table
    ============================================ */
 

@@ -1,4 +1,4 @@
-# Shop Savvy — Industrial Product Catalog
+# GraingeSeek — Industrial Product Catalog
 
 A simplified, Grainger-like industrial product catalog built for **SparkHacks 2026**. Search, compare, and build quote lists from 100+ industrial products — all in the browser with vanilla HTML, CSS, and JavaScript.
 
