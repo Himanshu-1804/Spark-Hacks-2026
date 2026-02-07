@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop Savvy: A simplified industrial product catalog. Find, compare, and select the right parts faster.">
+  <title>Shop Savvy — Industrial Product Catalog</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-nav" href="#main-content">Skip to main content</a>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo" aria-label="Shop Savvy Home">
+        <span class="header__logo-icon">SS</span>
+        Shop Savvy
+      </a>
+      <div class="header__search" role="search" aria-label="Search products">
+        <input type="text" class="header__search-input" placeholder="Search products, brands, categories..." aria-label="Search products">
+        <button class="header__search-btn" aria-label="Search">&#128269;</button>
+      </div>
+      <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="header__nav" aria-label="Main navigation">
+        <a href="index.html" class="header__nav-link header__nav-link--active">Home</a>
+        <a href="products.html" class="header__nav-link">Products</a>
+        <a href="compare.html" class="header__nav-link">Compare <span class="header__badge compare-badge"></span></a>
+        <a href="cart.html" class="header__nav-link">Quote List <span class="header__badge cart-badge"></span></a>
+        <a href="about.html" class="header__nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Main Content ── -->
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="hero" aria-label="Search hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Find the Right Industrial Parts Fast</h1>
+        <p class="hero__subtitle">Search 100+ products across 24 categories. Compare specs side-by-side and build your quote list in seconds.</p>
+        <div class="hero__search" role="search" aria-label="Hero search">
+          <input type="text" class="hero__search-input" id="hero-search" placeholder="Search by product name, brand, or keyword..." aria-label="Search products">
+          <button class="hero__search-btn" id="hero-search-btn" aria-label="Search">&#128269;</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <!-- Categories -->
+      <section aria-label="Browse by category">
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="categories-grid" id="categories-grid">
+          <div class="loading"><div class="loading__spinner"></div> Loading categories...</div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section aria-label="Featured products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="featured-grid" id="featured-grid">
+          <div class="loading"><div class="loading__spinner"></div> Loading products...</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ── Compare Bar ── -->
+  <div class="compare-bar" aria-label="Compare products bar">
+    <div class="compare-bar__inner">
+      <div class="compare-bar__items"></div>
+      <a href="compare.html" class="btn btn--primary btn--sm">View Compare</a>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__section">
+        <h3>Shop Savvy</h3>
+        <p style="color: rgba(255,255,255,0.6); font-size: 0.85rem; line-height: 1.5;">
+          A simplified industrial catalog helping users find the right parts faster.
+        </p>
+      </div>
+      <div class="footer__section">
+        <h3>Quick Links</h3>
+        <a href="products.html">All Products</a>
+        <a href="compare.html">Compare</a>
+        <a href="cart.html">Quote List</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer__section">
+        <h3>Categories</h3>
+        <a href="products.html?category=Safety">Safety</a>
+        <a href="products.html?category=Tools">Tools</a>
+        <a href="products.html?category=Fasteners">Fasteners</a>
+        <a href="products.html?category=Plumbing">Plumbing</a>
+      </div>
+      <div class="footer__section">
+        <h3>Data Source</h3>
+        <a href="https://www.kaggle.com/datasets/thedevastator/grainger-products-database-140k-records/data" target="_blank" rel="noopener">Kaggle Dataset</a>
+        <a href="https://github.com/Himanshu-1804/Spark-Hacks-2026" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      &copy; 2026 Shop Savvy — SparkHacks 2026 | Himanshu Panchal, Anthony Valenzo, Mario Tabares
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
