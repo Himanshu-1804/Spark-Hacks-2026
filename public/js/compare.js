@@ -1,5 +1,5 @@
 /* ============================================
-   GraingeSeek — Compare Page Logic
+   GraingeSeek  Compare Page Logic
    Side-by-side product comparison table
    ============================================ */
 
@@ -125,7 +125,7 @@ function renderCompare() {
 
   // Spec rows
   allSpecKeys.forEach((key) => {
-    const values = products.map((p) => (p.specs && p.specs[key]) || "—");
+    const values = products.map((p) => (p.specs && p.specs[key]) || "");
     const allSame = values.every((v) => v === values[0]);
     html += `<tr>
       <th>${key}</th>
